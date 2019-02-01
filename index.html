@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Exercice 1</title>
+</head>
+<body>
+    <div class="input">
+        <button id="clickButton">Click On Me</button>
+    </div>
+    <div id="click-count">Click Count</div>
+    <script>
+        var click = 0;
+        $('#clickButton').on('click', () => {
+            click++;
+            $('#click-count').text('Click Counted  ' + click)
+        })
+    </script>
+</body>
+</html>
