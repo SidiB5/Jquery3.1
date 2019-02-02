@@ -13,11 +13,13 @@
     </div>
     <div id="click-count">Click Count</div>
     <script>
-        var click = 0;
-        $('#clickButton').on('click', () => {
-            click++;
-            $('#click-count').text('Click Counted  ' + click)
-        })
+        $(document).ready(() => {
+            var click = 0;
+            $('#clickButton').on('click', () => {
+                click++;
+                $('#click-count').text('Click Counted  ' + click)
+            });
+        });
     </script>
 </body>
 </html>
